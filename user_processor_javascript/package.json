@@ -1,0 +1,30 @@
+{
+  "name": "user-data-processor-debugging-challenge",
+  "version": "2.0.0",
+  "description": "Desafio de debugging para desenvolvedores júnior e pleno - Processador de dados de usuários",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha 'specs/index.spec.js'",
+    "test:only": "npm test -- -g",
+    "test:debug": "NODE_ENV=test mocha --inspect-brk 'specs/index.spec.js'",
+    "test:debug:only": "npm run test:debug -- -g",
+    "start": "node lib/index.js"
+  },
+  "keywords": [
+    "debugging",
+    "challenge",
+    "javascript",
+    "nodejs",
+    "testing",
+    "interview"
+  ],
+  "author": "Interview Challenge",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
